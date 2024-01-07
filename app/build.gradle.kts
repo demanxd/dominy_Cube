@@ -24,10 +24,6 @@ android {
     }
 
     buildTypes {
-//        release {
-//            isMinifyEnabled = false
-//            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-//        }
         debug {
             externalNativeBuild {
                 cmake {
@@ -42,7 +38,6 @@ android {
                     targets ("${sample}".toString())
                 }
             }
-//            jniDebuggable true
         }
         release {
             externalNativeBuild {
@@ -58,8 +53,6 @@ android {
                     targets ("${sample}".toString())
                 }
             }
-//            signingConfig signingConfigs.debug
-//                    jniDebuggable true
         }
     }
     compileOptions {
